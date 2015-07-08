@@ -1,116 +1,220 @@
+<%-- 
+    Document   : index
+    Created on : 30/06/2015, 07:19:07 PM
+    Author     : Luis
+--%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Total Management</title>
-<link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="webthemez"> 
 
-<body>
-<div id="header_container">
-<div id="header">
-    <a href="index.html"><img src="images/logo.gif" alt="Radio Taxi" title="Radio Taxi" border="0" /></a>
-  <ul>
-    <li ><a href="index.html" >Principal</a> </li>
-     <li ><a href="#">Nosotros</a></li>
-     <li ><a href="#">Noveedades</a></li>
-	  <li ><a href="#">Me gusta</a></li>
-	   <li ><a href="#">Servicio</a></li>
-	   <li class="contact"><a href="#">Contactanos</a></li>
-  </ul>
- <h1>ibulum, ipsum id cursus</h1>  
-  </div>
-</div>
-<div id="body1"><form action="" method="post" >
-	<label>members login:</label>
-	<input name="Your name" type="text" id="yourname" value="Your name" />
-	<input name="emailid" type="text" id="emailid" value="Email Id" />
-	<input name="" type="submit" class="botton" value="GO" />
-</form>
-</div>
-<div id="bodymiddlePan">
-	<h2>Acerca del servicio?</h2>
-	<p>Somos una Empresa de Servicio de Taxi Remisse ejecutivo, nos caracterizamos por la puntualidad, responsabilidad y el compromiso con cada uno de nuestros clientes para brindarles un servicio de primer nivel.Poseemos una flota de taxis cómodos y seguros que se orientan a los servicios: Remisse, normal, económico y ejecutivo.</p>
-	<p>Preguntanos remotamente <span>"Nuestro servicio, tu comodidad."</span> </p>
-	<p class="lasttext">Si tienes  alguna duda llamanos  al 456789</p>
-</div>
-<div id="bodyBottomPan">
-  <div id="infoPan">
-  	<h2>Info</h2>
-	<p>horarios y atención</p>
-	<p class="view"><a href="#">Ver mas</a></p>
-  </div>
-  <div id="servicesPan">
-  	<h2>Servicios</h2>
-	<p>todos los servicios</p>
-	<p class="view"><a href="#">Ver mas</a></p>
-  </div>
-  <div id="schedulePan">
-  	<h2>Reclamos</h2>
-	<p>aqui reclamos y mas</p>
-	<p class="view"><a href="#">Ver mas</a></p>
-  </div>
-</div>
-<div id="bottomPan">
-  <div id="bottomMainPan">
-  	<div id="bottomBorderPan">
-		<h2>more tips</h2>
-		<h3>more links</h3>
-		<h4>announcements </h4>
-		<ul>
-			<li><a href="#">Lorem Ipsum has been the</a></li>
-			<li><a href="#">industry's standard dum</a></li>
-			<li><a href="#">text ever since the 1500s, </a></li>
-			<li><a href="#">when an unknown printer</a></li>
-			<li><a href="#">galley of type and</a></li>
-			<li><a href="#">scrambled  make a typ</a></li>
-			<li><a href="#">especimen </a></li>
-			<li><a href="#">has survived</a></li>
-		</ul>
-		<ul>
-			<li><a href="#">Lorem Ipsum has been the</a></li>
-			<li><a href="#">industry's standard dum</a></li>
-			<li><a href="#">text ever since the 1500s, </a></li>
-			<li><a href="#">when an unknown printer</a></li>
-			<li><a href="#">galley of type and</a></li>
-			<li><a href="#">scrambled  make a typ</a></li>
-			<li><a href="#">especimen </a></li>
-			<li><a href="#">has survived</a></li>
-		</ul>
-		<ul>
-			<li><a href="#">Lorem Ipsum has been the</a></li>
-			<li><a href="#">industry's standard dum</a></li>
-			<li><a href="#">text ever since the 1500s, </a></li>
-			<li><a href="#">when an unknown printer</a></li>
-			<li><a href="#">galley of type and</a></li>
-			<li><a href="#">scrambled  make a typ</a></li>
-			<li><a href="#">especimen </a></li>
-			<li><a href="#">has survived</a></li>
-		</ul>
-	</div>
-  </div>
-</div>
-<div id="footermainPan">
-  <div id="footerPan">
-  	<div id="footerlogoPan"><a href="index.html"><img src="images/footerlogo.gif" title="Total Management" alt="Total Management" width="290" height="36" border="0" /></a></div>
-	<ul>
-  	<li><a href="#">Home</a>| </li>
-  	<li><a href="#">About</a> | </li>
-  	<li><a href="#">Whats new</a>| </li>
-  	<li><a href="#">Forum</a> | </li>
-  	<li><a href="#">Solution</a> |</li>
-	<li><a href="#">Contact</a> </li>
-	</ul>
-	<p class="copyright">©total management. all right reserved.</p>
-	<ul class="templateworld">
-  	<li>design by:</li>
-	<li><a href="http://www.templateworld.com" target="_blank">Template World</a></li>
-  </ul>
-   <div id="footerPanhtml"><a href="http://validator.w3.org/check?uri=referer" target="_blank">XHTML</a></div>
-   <div id="footerPancss"><a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">css</a></div>
+    <!-- Title -->
+    <title>Radio Taxi</title>
+
+    <!-- CSS -->
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+	<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link href="images/favicon/favicon.png" rel="shortcut icon">
+    <script src="js/modernizr-2.7.1.min.js"></script>
+	
+  </head>
+  <body class="index" id="to-top">
+
+    <!-- Side nav -->
+    <nav class="side-nav" role="navigation">
+
+      <ul class="nav-side-nav">
+        <li><a class="tooltip-side-nav" href="#section-0" title="" data-original-title="Services" data-placement="left"></a></li>
+        <li><a class="tooltip-side-nav" href="#section-1" title="" data-original-title="Services" data-placement="left"></a></li>
+        <li><a class="tooltip-side-nav" href="#section-2" title="" data-original-title="Features" data-placement="left"></a></li>
+        <li><a class="tooltip-side-nav" href="#section-3" title="" data-original-title="Subscribe" data-placement="left"></a></li>
+        <li><a class="tooltip-side-nav" href="#section-4" title="" data-original-title="Subscribe" data-placement="left"></a></li>
+        <li><a class="tooltip-side-nav" href="#to-top" title="" data-original-title="Back" data-placement="left"></a></li>
+      </ul>
+      
+    </nav> <!-- /.side-nav -->
+
+    <!-- mainBanner -->
+    <header class="mainBanner" role="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-sm-7">
+            <figure>
+              <a href="./index.html">
+                <img class="img-logo" src="images/logo.png" alt="">
+              </a>
+            </figure> 
+            <h1>Radio TAXI movile</h1>
+            <p>Somos una Empresa de Servicio de Taxi Remisse ejecutivo, nos caracterizamos por la puntualidad, responsabilidad y el compromiso con cada uno de nuestros clientes para brindarles un servicio de primer nivel.</p>
+            <div class="buttons-wrapper">
+		<a href="#" class="button"> Login </a>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-5">
+          </div> <!-- /.col-md-5 -->
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+    </header> <!-- /.mainBanner -->
+
+    <!-- Services -->
+    <section class="highlights" id="section-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 highlightsCol">
+            <figure>
+              <img class="highlightsImg" src="images/icons/icon1.png" alt="">
+            </figure>
+            <h4>Servicio de Taxi</h4>
+            <p>¿Quieres un taxi de confianza?</p>
+          </div> 
+          <div class="col-md-4 highlightsCol">
+            <figure>
+              <img class="highlightsImg" src="images/icons/icon2.png" alt="">
+            </figure>
+            <h4>Servicio Aeropuerto</h4>
+            <p>Reserva por  anticipado el taxi segun tu hora de viaje y regreso.</p>
+          </div> 
+          <div class="col-md-4 highlightsCol">
+            <figure>
+              <img class="highlightsImg img-margin" src="images/icons/icon3.png" alt="">
+            </figure>
+            <h4>Servicio Especial</h4>
+            <p>Se ofrece el servicio, de taxi de lujo para  ocaciones especiales</p>
+          </div> 
+        </div> 
+      </div> 
+    </section> <!-- /.highlights -->
+
+<!-- Features -->
+<section class="ourFeatures" id="section-1">
+    <div class="container">
+        <h2>Login</h2> 
+        <div class="features"><!-- Main Points -->
+            <form action="Login" method="post" class="form-light mt-20" role="form">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" class="form-control" placeholder="Email address">
+                </div>
+                <div class="form-group">
+                    <label>Pass</label>
+                    <input type="text" name="pass" class="form-control" placeholder="Pass">
+                </div>
+                <button type="submit" class="btn btn-two">Iniciar</button><p><br></p>
+            </form>
+        </div>
+    </div> <!-- /.container -->
+</section> <!-- /.ourFeatures -->
+
+
+    <!-- Features -->
+    <section class="ourFeatures" id="section-2">
+
+      <div class="container">
  
-  </div>
+
+<div class="row">
+    <div class="container">
+    <h2>Nuevo Usuario</h2> 
+        <form action="AdminDB" method="post" class="form-light mt-20" role="form">
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" class="form-control" placeholder="Email address">
+            </div>
+            <div class="form-group">
+                <label>Pass</label>
+                <input type="text" name="pass" class="form-control" placeholder="Pass">
+            </div>
+            <button type="submit" class="btn btn-two">Registrarse</button><p><br></p>
+        </form>
+    </div>
 </div>
-</body>
+ 
+    </div> <!-- /.row -->
+
+  </div> <!-- /.container -->
+
+</section> <!-- /.ourFeatures -->
+          
+<section class="ourFeatures" id="section-3">
+    
+    <div class="container">
+        <h2>Reserva tu viaje</h2>
+        <form action="" method="post" class="form-light mt-20" role="form">
+                <div class="form-group">
+                    <label>nombre</label>
+                    <input type="text" name="nombre" class="form-control" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label>DNI</label>
+                    <input type="text" name="dni" class="form-control" placeholder="DNI">
+                </div>
+                <div class="form-group">
+                    <label>Fecha</label>
+                    <input type="date" name="fecha" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Nuemro Taxis</label>
+                    <input type="text" name="cantidad" class="form-control"  placeholder="Number requerid">
+                </div>
+                <div class="form-group">
+                        <label>Detalle</label>
+                        <textarea class="form-control" name="mensaje" id="message" placeholder="Write you message here..." style="height:100px;"></textarea>
+                </div>
+                <button type="submit" class="btn btn-two">Reservar</button><p><br></p>
+            </form>
+    </div>
+</section>
+
+<section class="ourFeatures" id="section-4">
+    
+    <div class="container">
+        <h2>Hacer un reclamo</h2>
+        <form action="Comentarios" method="post" class="form-light mt-20" role="form">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" class="form-control" placeholder="Email address">
+                </div>
+                <div class="form-group">
+                        <label>Message</label>
+                        <textarea class="form-control" name="mensaje" id="message" placeholder="Write you message here..." style="height:100px;"></textarea>
+                </div>
+                <button type="submit" class="btn btn-two">Enviar</button><p><br></p>
+            </form>
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer-section" role="contentinfo">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-7 footer-copyright">
+	                    <p>All rights reserved.</p>
+	                </div>
+	                <div class="col-sm-5 footer-social">
+	                    <div class="social-icons">
+                        <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+						 <a href="https://www.google.com/"><i class="fa fa-google-plus"></i></a>
+                        <a href="https://www.dribbble.com/"><i class="fa fa-dribbble"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square"></i></a> 
+						</div>
+	                </div>
+	            </div>
+	        </div>
+        </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/customScripts.js"></script>
+  </body>
 </html>
